@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Slap by Jan and Cynthia</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-effects">
+        <div class="red-blur"></div>
+        <div class="red-blur secondary"></div>
+    </div>
+    <div class="container">
+        <header>
+            <h1>RED SLAP</h1>
+            <p class="subtitle">by Jan and Cynthia</p>
+        </header>
+        
+        <div class="game-area">
+            <!-- Player 2 (Top) -->
+            <div class="player player-2" id="player-2">
+                <div class="stats">
+                    <h2>Player 2</h2>
+                    <p>Cards: <span id="p2-count">26</span></p>
+                    <div class="controls-hint">
+                        <span>Play: <b>O</b></span>
+                        <span>Slap: <b>P</b></span>
+                    </div>
+                </div>
+                <div class="deck" id="p2-deck-click">
+                    <div class="card card-back"></div>
+                </div>
+            </div>
+
+            <!-- Middle Pile -->
+            <div class="middle" id="middle-pile" title="Click anywhere here to SLAP!">
+                <div class="pile-count-box">Pile: <span id="pile-count">0</span></div>
+                <div class="card-display" id="card-display">
+                    <!-- Cards will be injected here -->
+                </div>
+                <div class="message-overlay" id="message-overlay">Game Start! P1 Turn</div>
+            </div>
+
+            <!-- Player 1 (Bottom) -->
+            <div class="player player-1 active" id="player-1">
+                <div class="deck" id="p1-deck-click">
+                    <div class="card card-back"></div>
+                </div>
+                <div class="stats">
+                    <h2>Player 1</h2>
+                    <p>Cards: <span id="p1-count">26</span></p>
+                    <div class="controls-hint">
+                        <span>Play: <b>Q</b></span>
+                        <span>Slap: <b>W</b></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="mobile-controls">
+            <div class="p1-controls">
+                <button id="btn-p1-play" class="btn play-btn">Play (Q)</button>
+                <button id="btn-p1-slap" class="btn slap-btn">SLAP! (W)</button>
+            </div>
+            <div class="p2-controls">
+                <button id="btn-p2-play" class="btn play-btn">Play (O)</button>
+                <button id="btn-p2-slap" class="btn slap-btn">SLAP! (P)</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
