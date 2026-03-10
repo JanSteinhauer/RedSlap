@@ -1,23 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
     <title>Red Slap by Jan and Cynthia</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;900&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <div class="background-effects">
         <div class="red-blur"></div>
         <div class="red-blur secondary"></div>
     </div>
     <div class="container">
+        <div class="mobile-controls p2-mobile-controls">
+            <div class="p2-controls">
+                <button id="btn-p2-play" class="btn play-btn">Play (O)</button>
+                <button id="btn-p2-slap" class="btn slap-btn">SLAP! (P)</button>
+            </div>
+        </div>
+
         <header>
             <h1>RED SLAP</h1>
             <p class="subtitle">by Jan and Cynthia</p>
         </header>
-        
+
         <div class="game-area">
             <!-- Player 2 (Top) -->
             <div class="player player-2" id="player-2">
@@ -58,18 +68,15 @@
                 </div>
             </div>
         </div>
-        
-        <div class="mobile-controls">
+
+        <div class="mobile-controls p1-mobile-controls">
             <div class="p1-controls">
                 <button id="btn-p1-play" class="btn play-btn">Play (Q)</button>
                 <button id="btn-p1-slap" class="btn slap-btn">SLAP! (W)</button>
-            </div>
-            <div class="p2-controls">
-                <button id="btn-p2-play" class="btn play-btn">Play (O)</button>
-                <button id="btn-p2-slap" class="btn slap-btn">SLAP! (P)</button>
             </div>
         </div>
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>
